@@ -38,7 +38,13 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
+
+    dataBinding {
+        enable = true
+    }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
     }
@@ -50,6 +56,11 @@ android {
 }
 
 dependencies {
+
+    val nav_version = "2.7.7"
+    // Navigation
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
