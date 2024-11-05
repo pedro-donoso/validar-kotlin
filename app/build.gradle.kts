@@ -57,6 +57,7 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.compose.material3)
     val nav_version = "2.7.7"
     // Navigation
     implementation(libs.androidx.navigation.fragment.ktx)
@@ -70,6 +71,13 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    implementation(libs.ui)
+    implementation(libs.material3)
+    implementation(libs.ui.tooling.preview)
+    implementation(libs.androidx.lifecycle.runtime.ktx.v260)
+    implementation(libs.androidx.activity.compose.v160)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
